@@ -4,8 +4,8 @@
 int main()
 {
     double m,d,theta;
-    printf("put value of m d(in micrometer) theta(in degree) : ");
-    scanf("%lf%lf%lf",&m,&d,&theta);
+    printf("put value of m theta(in degree) d(in micrometer) : ");
+    scanf("%lf%lf%lf",&m,&theta,&d);
     double theta2=(pi/180)*theta;
     double d1=d*1e-6;
     double p=sin(theta2);
