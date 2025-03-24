@@ -7,10 +7,10 @@ int main()
     printf("put value of m theta(in degree) d(in micrometer) : ");
     scanf("%lf%lf%lf",&m,&theta,&d);
     double theta2=(pi/180)*theta;
-    double d1=d*1e-6;
+    double d1=d*pow(10,-6);
     double p=sin(theta2);
     double wavelength=(d1*p)/m;
-    double t=wavelength*1e9;
+    double t=wavelength*pow(10,9);
     printf("Wavelength=%.2lf nm\n",t);
     if(t>=380&&t<=450)
         printf("Color=Violet\n");
